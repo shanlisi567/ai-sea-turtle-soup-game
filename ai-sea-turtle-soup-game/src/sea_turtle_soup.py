@@ -11,7 +11,7 @@ import sys
 import time
 from typing import List, Dict, Optional
 from datetime import datetime
-from .player_manager import PlayerConfig
+from player_manager import PlayerConfig
 
 class SeaTurtleSoupGame:
     """海龟汤游戏主类（支持系统代理）"""
@@ -599,7 +599,7 @@ class SeaTurtleSoupGame:
     
     def change_configuration(self):
         """更改游戏配置"""
-        from .player_manager import create_config_editor
+        from player_manager import create_config_editor
         
         print("\n启动配置编辑器...")
         create_config_editor()
